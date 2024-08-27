@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Bhojnalaya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="paymentpage.css">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <nav>
+          <!--Logo image-->
+          <div class="logo-img">
+            <img src="assests/bhojnalaya_logo.png" alt="Canteen Logo" class="logo">
+          </div>
+
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="payment-container">
+        <h2>Payment Details</h2>
+        <div class="payment-details">
+            <p>Selected Item: <span id="selected-item"></span></p>
+            <p>Quantity: <input type="number" id="quantity" value="1" min="1"></p>
+            <p>Total Price: ₹<span id="total-price"></span></p>
+            <p>UPI ID: <input type="text" id="upi-id" placeholder="username@bank" required></p>
+            <button id="verify-btn">Verify UPI ID</button>
+            <button id="pay-btn" style="display: none;">Proceed to Payment</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-overlay"></div>
+        <div class="footer-container">
+          <div class="footer-column">
+            <img src="assests/logo_bhojnalaya.png" alt="Coffee Shop Logo" />
+            <h3>BHOJNALAYA.</h3>
+            <div class="social-media">
+              <a href="#"><img src="assests/fb_icon.png" alt="facebook" /></a>
+              <a href="#"
+                ><img src="assests/insta_icon.png" alt="instagram"
+              /></a>
+              <a href="#"
+                ><img src="assests/twitter_icon.png" alt="twitter"
+              /></a>
+              <a href="#"><img src="assests/WA_icon.png" alt="whatsapp" /></a>
+            </div>
+          </div>
+          <div class="footer-column hide-footer">
+            <h3 style="margin-top: 35px">Viewer Guide</h3>
+            <ul>
+              <li><a href="#section1">Home</a></li>
+              <br />
+              <li><a href="aboutus.html">About Us</a></li>
+              <br />
+              <li><a href="menu.html">Menu</a></li>
+              <br />
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 style="color: white">Say hello!</h3>
+            <p> Bhojnalaya canteen.</p>
+            <br />
+            <p>info.bhojnalaya@gmail.com</p> <hr style="width: 11rem; margin-top: 1.5px;">
+            <br />
+            <h3 style="font-size: 1.3rem; margin-bottom: -20px;">+91 9003106755</h3>
+            <br />
+          </div>
+        </div>
+        <hr />
+        <p style="margin-bottom: 10px">
+          &copy; 2024 Bhojnalaya. All rights reserved.
+        </p>
+      </footer>
+
+</body>
+
+<script>
+  //sidebar script
+  function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+  }
+
+  function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+  }
+
+  //navbar animation script
+  document.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+
+    if (window.scrollY > 100) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
+<script src="paymentpage.js"></script>
+</html>

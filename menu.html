@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Bhojnalaya</title>
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <nav>
+        <!--Logo image-->
+        <div class="logo-img">
+          <img
+            src="assests/bhojnalaya_logo.png"
+            alt="Canteen Logo"
+            class="logo"
+          />
+        </div>
+
+        <!-- side bar for mini-screens-->
+        <ul class="sidebar">
+          <div class="sidebar-img">
+            <li>
+              <a href="#"
+                ><img src="assests/bhojnalaya_logo.png" alt="Canteen Logo"
+              /></a>
+            </li>
+            <li onclick="hideSidebar()">
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="60px"
+                  viewBox="0 -960 960 960"
+                  width="60px"
+                  fill="#black"
+                >
+                  <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                  /></svg
+              ></a>
+            </li>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="#section4">Partners</a></li>
+        </ul>
+        <!--nav bar for laptops-->
+        <ul class="nav-links">
+          <li class="hide-navbar"><a href="index.html">Home</a></li>
+          <li class="hide-navbar"><a href="menu.html">Menu</a></li>
+          <li class="hide-navbar"><a href="aboutus.html">About Us</a></li>
+          <li class="hide-navbar"><a href="index.html">Partners</a></li>
+          <li class="menu-button" onclick="showSidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="60px"
+                viewBox="0 -960 960 960"
+                width="60px"
+                fill="black"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                /></svg
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <h1 class="shop-heading">SHOP</h1>
+      <div class="menu-container">
+        <nav class="menu-categories">
+          <ul>
+            <li>
+              <a href="#" class="category-link" data-category="special"
+                >Today's Special</a
+              >
+            </li>
+            <li>
+              <a href="#" class="category-link" data-category="breakfast"
+                >Breakfast</a
+              >
+            </li>
+            <li>
+              <a href="#" class="category-link" data-category="lunch">Lunch</a>
+            </li>
+            <li>
+              <a href="#" class="category-link" data-category="deserts"
+                >Deserts</a
+              >
+            </li>
+            <li>
+              <a href="#" class="category-link" data-category="juices"
+                >Juices</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-items">
+          <!-- Food items will be dynamically inserted here -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-overlay"></div>
+      <div class="footer-container">
+        <div class="footer-column">
+          <img src="assests/logo_bhojnalaya.png" alt="Coffee Shop Logo" />
+          <h3>BHOJNALAYA.</h3>
+          <div class="social-media">
+            <a href="#"><img src="assests/fb_icon.png" alt="facebook" /></a>
+            <a href="#"><img src="assests/insta_icon.png" alt="instagram" /></a>
+            <a href="#"><img src="assests/twitter_icon.png" alt="twitter" /></a>
+            <a href="#"><img src="assests/WA_icon.png" alt="whatsapp" /></a>
+          </div>
+        </div>
+        <div class="footer-column hide-footer">
+          <h3 style="margin-top: 35px">Viewer Guide</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <br />
+            <li><a href="aboutus.html">About Us</a></li>
+            <br />
+            <li><a href="menu.html">Menu</a></li>
+            <br />
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 style="color: white">Say hello!</h3>
+          <p>Bhojnalaya canteen.</p>
+          <br />
+          <p>info.bhojnalaya@gmail.com</p>
+          <hr style="width: 11rem; margin-top: 1.5px" />
+          <br />
+          <h3 style="font-size: 1.3rem; margin-bottom: -20px">
+            +91 9003106755
+          </h3>
+          <br />
+        </div>
+      </div>
+      <hr />
+      <p style="margin-bottom: 10px">
+        &copy; 2024 Bhojnalaya. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        //sidebar script
+        function showSidebar() {
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.style.display = 'flex';
+        }
+      
+        function hideSidebar() {
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.style.display = 'none';
+        }
+      
+        //navbar animation script
+        document.addEventListener('scroll', () => {
+          const header = document.querySelector('header');
+      
+          if (window.scrollY > 100) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        });
+      </script>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

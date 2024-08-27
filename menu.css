@@ -1,0 +1,131 @@
+/* General styling */
+body {
+    font-family: "Merriweather", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main content styling */
+.shop-heading {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.menu-container {
+    display: flex;
+    margin: 7rem;
+    align-items: flex-start;
+}
+
+.menu-categories {
+    flex-basis: 20%;
+    position: sticky;
+    top: 12rem;
+}
+
+.menu-categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-categories li {
+    margin-bottom: 1rem;
+}
+
+.menu-categories a {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-categories a:hover {
+    text-decoration: underline;
+}
+
+.menu-items {
+    flex-basis: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.food-item {
+    flex-basis: 250px;
+    text-align: center;
+}
+
+.food-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.food-item:hover img {
+    transform: scale(1.05);
+}
+
+.item-name {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.price {
+    font-size: 1rem;
+    color: #ff9200;
+}
+
+.buy-btn {
+    font-family: "Oswald", sans-serif;
+    background-color: rgba(255, 166, 0, 0.678);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: rgba(255, 166, 0, 0.878);
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .nav-links .hide-navbar {
+        display: none;
+    }
+
+    .nav-links .menu-button {
+        display: block;
+    }
+
+    .footer-column {
+        flex-basis: 100%;
+    }
+
+    .footer-column.hide-footer {
+        display: block;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu-categories {
+        position: inherit;
+        top: 12rem;
+    }
+}

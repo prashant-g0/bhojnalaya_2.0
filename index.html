@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhojnalaya Canteen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!--header-->
+    <header>
+        <nav>
+          <!--Logo image-->
+          <div class="logo-img">
+            <img src="assests/bhojnalaya_logo.png" alt="Canteen Logo" class="logo">
+          </div>
+
+            <!-- side bar for mini-screens-->
+            <ul class="sidebar">
+              <div  class="sidebar-img">
+                <li><a href="#"><img src="assests/bhojnalaya_logo.png" alt="Canteen Logo"></a></li>
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+              </div>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">Menu</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#section4">Partners</a></li> 
+              </ul>
+              <!--nav bar for laptops-->
+            <ul class="nav-links">
+                <li class="hide-navbar"><a href="#section1">Home</a></li>
+                <li class="hide-navbar"><a href="#section2">Menu</a></li>
+                <li class="hide-navbar"><a href="aboutus.html">About Us</a></li>
+                <li class="hide-navbar"><a href="#section4">Partners</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <!--Introduction screen-->
+        <section id="section1">
+            <div class="text-content">
+                <h1>UNFORGETTABLE TASTE, <BR>UNFORGETTABLE MEMORIES.</BR></h1>
+                <p>Enjoy the best food with a variety of delicious meals to choose from.</p>
+                <button style="cursor: pointer;"><a style="color: white; text-decoration: none;" href="aboutus.html">Explore >> </a></button>
+            </div>
+            <img src="assests/canteen.webp" alt="Delicious Food" class="food-image">
+        </section>
+
+          <!-- Short Menu -->
+        <section id="section2">
+            <h2>Our Menu</h2>
+            <p class="menu-heading">Unleash your food cravings <br> with our top rated menu.</p>
+            <div class="food-items">
+                <div class="food-item">
+                    <img src="assests/food1.jpg" alt="Food Item 1">
+                    <p>Chicken Pasta <br> ₹60</p>
+                </div>
+                <div class="food-item">
+                    <img src="assests/food2.jpg" alt="Food Item 2">
+                    <p>Omllete with veggies & Rice <br> ₹60</p>
+                </div>
+                <div class="food-item">
+                    <img src="assests/food3.jpg" alt="Food Item 3">
+                    <p>Japanese Style Sushi <br> ₹60</p>
+                </div>
+                <div class="food-item">
+                    <img src="assests/food4.jpg" alt="Food Item 4">
+                    <p>Fish plate <br> ₹90</p>
+                </div>
+            </div>
+            <button style="cursor: pointer;"><a style="color: white; text-decoration: none;" href="menu.html">View All >> </a></button>
+        </section>
+
+        <!--Specials-->
+        <section id="section3">
+            <img src="assests/about_us.png" alt="About Us">
+            <div style="color: white;">
+            <h3>Our Specials</h3>
+            <h1>WE MAKE THE BEST <br> BURGERS IN TOWN</h1>
+            <p class="special-desc">Indulge in a variety of mouth-watering options, each crafted with the freshest ingredients and a dash of culinary creativity. From classic chicken patties to vegetarian delights, our burgers are designed to satisfy every craving.</p>
+            <p class="special-desc">And don't worry about your diet—at Bhojnalaya, we believe in the joy of balance. Treat yourself to our irresistible burgers and remember, a little fun with your diet never hurt anyone. Come, savor the taste of Bhojnalaya and discover your new favorite burger!</p>
+          </div>
+        </section>
+
+        <!--Partners-->
+        <section id="section4">
+            <div class="partners">
+                <img src="assests/partner1.png" alt="Partner 1">
+                <img src="assests/partner2.png" alt="Partner 2">
+                <img src="assests/partner_3.png" alt="Partner 3">
+                <img src="assests/partner4.png" alt="Partner 4">
+                <img src="assests/partner5.png" alt="Partner 5">
+                <img src="assests/partner6.png" alt="Partner 6">
+            </div>
+        </section>
+
+        <!-- Subscribe Section -->
+      <section id="subscribe">
+        <img src="assests/subscribe_img.png" alt="Background" />
+        <div>
+          <h2>Subscribe to get exclusive updates and exciting offers!</h2>
+          <input type="email" placeholder="Your email" />
+          <button>Subscribe</button>
+        </div>
+      </section>
+    
+
+    <!-- Gallery Section -->
+    <section id="section5">
+        <div class="gallery">
+            <img src="assests/gallery1.jpg" alt="Gallery Image 1">
+            <img src="assests/gallery2.jpg" alt="Gallery Image 2">
+            <img src="assests/gallery3.jpg" alt="Gallery Image 3">
+            <img src="assests/gallery4.webp" alt="Gallery Image 4">
+            <img src="assests/gallery5.webp" alt="Gallery Image 5">
+        </div>
+    </section>
+  </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-overlay"></div>
+        <div class="footer-container">
+          <div class="footer-column">
+            <img src="assests/logo_bhojnalaya.png" alt="Coffee Shop Logo" />
+            <h3>BHOJNALAYA.</h3>
+            <div class="social-media">
+              <a href="#"><img src="assests/fb_icon.png" alt="facebook" /></a>
+              <a href="#"
+                ><img src="assests/insta_icon.png" alt="instagram"
+              /></a>
+              <a href="#"
+                ><img src="assests/twitter_icon.png" alt="twitter"
+              /></a>
+              <a href="#"><img src="assests/WA_icon.png" alt="whatsapp" /></a>
+            </div>
+          </div>
+          <div class="footer-column hide-footer">
+            <h3 style="margin-top: 35px">Viewer Guide</h3>
+            <ul>
+              <li><a href="#section1">Home</a></li>
+              <br />
+              <li><a href="aboutus.html">About Us</a></li>
+              <br />
+              <li><a href="menu.html">Menu</a></li>
+              <br />
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 style="color: white">Say hello!</h3>
+            <p> Bhojnalaya canteen.</p>
+            <br />
+            <p>info.bhojnalaya@gmail.com</p> <hr style="width: 11rem; margin-top: 1.5px;">
+            <br />
+            <h3 style="font-size: 1.3rem; margin-bottom: -20px;">+91 9003106755</h3>
+            <br />
+          </div>
+        </div>
+        <hr />
+        <p style="margin-bottom: 10px">
+          &copy; 2024 Bhojnalaya. All rights reserved.
+        </p>
+      </footer>
+
+</body>
+
+<script>
+  //sidebar script
+  function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+  }
+
+  function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+  }
+
+  //navbar animation script
+  document.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+
+    if (window.scrollY > 100) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
+
+</html>

@@ -1,0 +1,49 @@
+.confirmation-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 7.6rem auto 5rem auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-details {
+    margin-top: 20px;
+}
+
+.order-details p {
+    margin: 10px 0;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+}
+
+.media img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+#qrcode {
+    margin-left: auto;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: orangered;
+}
+
+

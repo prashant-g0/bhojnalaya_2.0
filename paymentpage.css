@@ -1,0 +1,54 @@
+.payment-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 7rem auto auto auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-details p {
+    margin: 15px 0;
+}
+
+.payment-details input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment-details button {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+}
+
+.payment-details button:hover {
+    background-color: orangered;
+}
+
+.payment-details button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.navbar, .footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 a, .nav-links a, .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}

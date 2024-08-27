@@ -1,0 +1,676 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+header {
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  transition: background 0.4s ease-in-out;
+}
+
+header.scrolled {
+  background-color: white;
+  opacity: 1;
+}
+
+nav {
+  margin-left: 10px;
+  margin-right: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  width: 80px;
+  margin-left: 30px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-links .menu-button {
+  display: none;
+}
+
+/* sidebar */
+
+.sidebar {
+  position: fixed;
+  height: 100vh;
+  width: 250px;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 166, 0, 0.678);
+  backdrop-filter: blur(3px);
+  z-index: 999;
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li,
+a {
+  width: 100%;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: large;
+  font-weight: 600;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.sidebar img {
+  height: 100px;
+}
+
+.sidebar .sidebar-img {
+  display: flex; 
+  gap: 7rem; 
+  margin-top: 15px; 
+  margin-left: -30px; 
+  margin-bottom: 50px;
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+#section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orange;
+  padding: 2rem;
+  height: 100vh;
+}
+
+.text-content {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  max-width: 50%;
+}
+
+.food-image {
+  width: 50%;
+  border-radius: 10px;
+}
+
+button {
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: #ec3d08;
+  border: none;
+  padding: 15px;
+  color: white;
+}
+
+#section2 .food-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#section2 h2 {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Oswald";
+  font-weight: 400;
+}
+
+#section2 .menu-heading {
+  margin-top: -20px;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Oswald";
+  font-weight: 800;
+}
+
+.food-item {
+  text-align: center;
+  margin: 1rem;
+  transition: transform 0.3s;
+}
+
+.food-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.food-item:hover {
+  transform: scale(1.1);
+}
+
+.food-item p {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#section3 {
+  height: 60vh;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  text-align: left;
+}
+
+#section3 img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+#section3 h3 {
+  font-family: "Oswald", sans-serif;
+  text-decoration: underline;
+}
+
+#section3 h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0;
+}
+
+#section3 p {
+  width: 75%;
+  font-family: cursive;
+}
+
+#section4 .partners {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  margin: 20px 0 20px 0;
+}
+
+#section4 img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  filter: grayscale(100%);
+}
+
+#section4 img:hover {
+  filter: grayscale(0%);
+}
+
+#section5 .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0;
+}
+
+#section5 .gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+#section5 .gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Subscribe Section */
+#subscribe {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url("assests/grayback_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 50px 0 50px;
+  padding: 50px 20px;
+  color: #070707;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#subscribe img {
+  width: 50%;
+  object-fit: cover;
+}
+
+#subscribe div {
+  padding: 20px;
+}
+
+#subscribe h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 34px;
+}
+
+#subscribe input {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#subscribe button {
+  padding: 10px 20px;
+  background-color: #fc4b15;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#subscribe button {
+  background-color: #d35400;
+}
+
+#subscribe button:hover {
+  background-color: #c6560b;
+  border-radius: 10px;
+}
+
+footer {
+  position: relative;
+  background: url("assests/footer_img.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.footer-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.footer-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 2;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .social-media img {
+  height: 30px;
+  margin: 0 10px;
+  margin-top: 10px;
+  filter: invert(100%);
+}
+
+.footer-column {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.footer-column img {
+  height: 80px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+}
+
+.footer-column p,
+.footer-column ul {
+  font-size: 14px;
+  color: rgb(194, 193, 193);
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: rgb(194, 193, 193);
+}
+
+footer hr {
+  margin: 20px 0;
+  border: 0.5px solid rgb(184, 182, 182);
+  z-index: 2;
+  position: relative;
+}
+
+footer p {
+  z-index: 2;
+  position: relative;
+  margin: 0;
+}
+
+/*Responsiveness*/
+
+/* For tablets and smaller devices */
+@media (max-width: 800px) {
+
+  header {
+    height: 15vh;
+  }
+
+  .nav-links .hide-navbar {
+    display: none;
+  }
+
+  .nav-links .menu-button {
+    display: block;
+  }
+
+  .sidebar {
+    width: 90%;
+  }
+
+  .sidebar .sidebar-img {
+    gap: 29rem;
+  }
+
+  .sidebar a {
+    font-size: 50px;
+  }
+
+  #section1 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .text-content {
+    max-width: 100%;
+    font-size: 40px;
+  }
+
+  .food-image {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  #section2 .food-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  #section2 .food-item {
+    width: 50%;
+    margin: 10px 75px;
+    align-items: center;
+  }
+
+  #section2 button {
+    margin-left: 19rem;
+    font-size: 30px;
+  }
+
+  #section3 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #section3 img {
+    width: 400px;
+    margin-top: 20px;
+  }
+
+  #section3 h1 {
+    font-size: 40px;
+    margin-bottom: -80px;
+  }
+
+  #section3 h3 {
+    font-size: 30px;
+  }
+
+  #section3 .special-desc {
+    display: none;
+  }
+
+  #section4 img {
+    width: 80px;
+    height: 80px;
+    margin: 30px 0;
+  }
+
+  #section5 .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  #subscribe {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  #subscribe img {
+    display: none;
+  }
+
+  #subscribe input {
+    height: 30px;
+  }
+
+  #subscribe button {
+    height: 50px;
+  }
+
+  #subscribe div {
+    padding: 20px;
+  }
+
+  footer .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hide-footer {
+    display: none;
+  }
+}
+
+/* For smartphones */
+@media (max-width: 500px) {
+
+  header {
+    height: 7vh;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .sidebar {
+    width: 50%;
+    background-color: orange;
+    height: 120vh;
+  }
+
+  .sidebar .sidebar-img {
+    gap: 5rem;
+  }
+
+  .sidebar a {
+    font-size: 40px;
+  }
+
+  .text-content {
+    font-size: 30px;
+  }
+
+  #section1 {
+    height: 80vh;
+    width: 43vh;
+  }
+
+  #section1 img {
+    width: 100%;
+  }
+
+  #section1 .text-content p{
+    display: none;
+  }
+
+  button {
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  #section2 h2 {
+    font-size: 30px;
+    margin-right: -50px;
+  }
+
+  #section2 .menu-heading {
+    font-size: 30px;
+    margin-right: -45px;
+    display: block;
+  }
+
+  #section2 p {
+    display: none;
+  }
+
+  #section2 .food-item img {
+    display: none;
+  }
+
+  #section2 button {
+    margin-left: 9rem;
+  }
+
+  #section3 {
+    width: 46.3vh;
+    background: linear-gradient(gold, yellow, orange);
+  }
+
+  #section3 h3 {
+    margin-bottom: 0px;
+  }
+
+  #section3 h1 {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+
+  #section4 {
+    margin: 0px 0px 0px 15px;
+  }
+
+  #section4 img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #section5 {
+    width: 100%;
+  }
+
+  #section5 .gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #section5 .gallery img {
+    width: 100%;
+  }
+
+  #subscribe {
+    width: 41.5vh;
+  }
+
+  #subscribe div {
+    padding: 0;
+    margin: 0;
+  }
+
+  footer {
+    width: 49.8vh;
+  }
+
+}

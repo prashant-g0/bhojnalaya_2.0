@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Bhojnalaya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutus.css">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <nav>
+          <!--Logo image-->
+          <div class="logo-img">
+            <img src="assests/bhojnalaya_logo.png" alt="Canteen Logo" class="logo">
+          </div>
+
+            <!-- side bar for mini-screens-->
+            <ul class="sidebar">
+              <div  class="sidebar-img">
+                <li><a href="#"><img src="assests/bhojnalaya_logo.png" alt="Canteen Logo"></a></li>
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+              </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="index.html">Partners</a></li>
+              </ul>
+              <!--nav bar for laptops-->
+            <ul class="nav-links">
+                <li class="hide-navbar"><a href="index.html">Home</a></li>
+                <li class="hide-navbar"><a href="menu.html">Menu</a></li>
+                <li class="hide-navbar"><a href="aboutus.html">About Us</a></li>
+                <li class="hide-navbar"><a href="index.html">Partners</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+        <h1 class="shop-heading">About Us</h1>
+        <div class="about-container">
+            <!-- Logo and Description -->
+            <section class="about-description">
+                <img src="assests/bhojnalaya_logo.png" alt="Bhojnalaya Logo" class="about-logo">
+                <p>At Bhojnalaya, we are dedicated to providing delicious food and exceptional service. Our menu is crafted with love and care, using the finest ingredients to ensure a memorable dining experience. Whether you're here for breakfast, lunch, or dinner, we aim to make your visit delightful.</p>
+            </section>
+            
+            <!-- Chefs Section -->
+            <section class="chefs-section">
+                <h2>Meet Our Chefs</h2>
+                <div class="chefs-container">
+                    <div class="chef-card">
+                        <img src="assests/chef1.jpg" alt="Chef 1">
+                        <h3>Chef John Doe</h3>
+                        <p>Specializes in Italian and French cuisine with over 20 years of experience.</p>
+                    </div>
+                    <div class="chef-card">
+                        <img src="assests/chef2.jpg" alt="Chef 2">
+                        <h3>Chef Emily Brown</h3>
+                        <p>A pastry chef known for her exquisite desserts and baked goods.</p>
+                    </div>
+                    <div class="chef-card">
+                        <img src="assests/chef3.jpg" alt="Chef 3">
+                        <h3>Chef Jane Smith</h3>
+                        <p>Expert in Asian and Indian cuisines, bringing authentic flavors to your plate.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Customer Feedback Section -->
+            <section class="customer-feedback-section">
+                <h2>Customer Feedback</h2>
+                <div class="feedback-container">
+                    <div class="feedback-card">
+                        <p>"Amazing food and excellent service. Highly recommended!"</p>
+                        <span>- Ranjan</span>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"The best dining experience I've ever had. The staff is wonderful!"</p>
+                        <span>- Nilesh Shah (Visitor)</span>
+                    </div>
+                    <div class="feedback-card">
+                        <p>"Delicious food with a cozy ambiance. Will definitely come back."</p>
+                        <span>- Ramesh B. (Faculty)</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Feedback Form Section -->
+            <section class="feedback-form-section">
+                <h2>We Value Your Feedback</h2>
+                <form id="feedback-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="food-feedback">Feedback for Food:</label>
+                    <textarea id="food-feedback" name="food-feedback" rows="4" required></textarea>
+                    
+                    <label for="staff-feedback">Feedback for Staff Behavior:</label>
+                    <textarea id="staff-feedback" name="staff-feedback" rows="4" required></textarea>
+                    
+                    <label for="environment-feedback">Feedback for Environment Setup:</label>
+                    <textarea id="environment-feedback" name="environment-feedback" rows="4" required></textarea>
+                    
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-overlay"></div>
+        <div class="footer-container">
+          <div class="footer-column">
+            <img src="assests/logo_bhojnalaya.png" alt="Coffee Shop Logo" />
+            <h3>BHOJNALAYA.</h3>
+            <div class="social-media">
+              <a href="#"><img src="assests/fb_icon.png" alt="facebook" /></a>
+              <a href="#"
+                ><img src="assests/insta_icon.png" alt="instagram"
+              /></a>
+              <a href="#"
+                ><img src="assests/twitter_icon.png" alt="twitter"
+              /></a>
+              <a href="#"><img src="assests/WA_icon.png" alt="whatsapp" /></a>
+            </div>
+          </div>
+          <div class="footer-column hide-footer">
+            <h3 style="margin-top: 35px">Viewer Guide</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <br />
+              <li><a href="aboutus.html">About Us</a></li>
+              <br />
+              <li><a href="menu.html">Menu</a></li>
+              <br />
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 style="color: white">Say hello!</h3>
+            <p> Bhojnalaya canteen.</p>
+            <br />
+            <p>info.bhojnalaya@gmail.com</p> <hr style="width: 11rem; margin-top: 1.5px;">
+            <br />
+            <h3 style="font-size: 1.3rem; margin-bottom: -20px;">+91 9003106755</h3>
+            <br />
+          </div>
+        </div>
+        <hr />
+        <p style="margin-bottom: 10px">
+          &copy; 2024 Bhojnalaya. All rights reserved.
+        </p>
+      </footer>
+
+</body>
+
+<script>
+  //sidebar script
+  function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+  }
+
+  function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+  }
+
+  //navbar animation script
+  document.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+
+    if (window.scrollY > 100) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
+<script src="aboutus.js"></script>
+
+
+</body>
+</html>
